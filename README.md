@@ -43,20 +43,34 @@ Build the React app.
 Deploy the build directory to Vercel or Netlify following their specific deployment instructions.
 Backend
 Deploy the Express server to Heroku:
+
+
 Initialize a git repository and commit your code.
+
 Create a Heroku app.
+
 Push your code to Heroku.
+
 Set environment variables in Heroku (e.g., RIOT_API_KEY, MONGODB_URI).
+
 API Endpoints
 Auth Routes
+
 POST /api/auth/signup: Create a new user
+
 POST /api/auth/login: Authenticate a user
+
 Account Routes
+
 POST /api/account/link: Link a Valorant account
 POST /api/account/unlink: Unlink a Valorant account
 Valuation Routes
 GET /api/valuation: Get the estimated worth of the linked Valorant account
+
+
 Contributing
+
+
 Fork the repository
 Create a new branch (git checkout -b feature/your-feature)
 Commit your changes (git commit -m 'Add some feature')
