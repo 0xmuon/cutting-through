@@ -6,7 +6,6 @@ Valorant Account Valuation
 This project is a web application that allows users to link their Valorant accounts and estimate their worth based on the account level and skins purchased. The application is built with a React frontend, an Express backend, and uses MongoDB for data storage.
 
 
-
 Features
 
 User authentication (sign up, login)
@@ -72,13 +71,23 @@ Contributing
 
 
 Fork the repository
+
 Create a new branch (git checkout -b feature/your-feature)
+
 Commit your changes (git commit -m 'Add some feature')
+
 Push to the branch (git push origin feature/your-feature)
+
 Open a pull request
-License
+
+#### License
+
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements
+
+#### Acknowledgements
+
 Riot Games for providing the Valorant API
+
 The open-source community for the tools and libraries used in this project
