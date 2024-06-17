@@ -1,12 +1,12 @@
 # cutting-through
 valorant account worth predictor
 
-Valorant Account Valuation
+#### Valorant Account Valuation
 
 This project is a web application that allows users to link their Valorant accounts and estimate their worth based on the account level and skins purchased. The application is built with a React frontend, an Express backend, and uses MongoDB for data storage.
 
 
-Features
+#### Features
 
 User authentication (sign up, login)
 Link and unlink Valorant accounts
@@ -40,7 +40,8 @@ Deployment
 Frontend
 Build the React app.
 Deploy the build directory to Vercel or Netlify following their specific deployment instructions.
-Backend
+
+#### Backend
 Deploy the Express server to Heroku:
 
 
@@ -67,7 +68,7 @@ Valuation Routes
 GET /api/valuation: Get the estimated worth of the linked Valorant account
 
 
-Contributing
+#### Contributing
 
 
 Fork the repository
