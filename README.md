@@ -8,6 +8,8 @@ This project is a web application that allows users to link their Valorant accou
 
 #### Features
 
+
+
 User authentication (sign up, login)
 Link and unlink Valorant accounts
 Fetch Valorant account data using Riot Games API
@@ -33,6 +35,8 @@ MONGODB_URI=your_mongodb_connection_string
 RIOT_API_KEY=your_riot_games_api_key
 Start the backend server.
 Frontend Setup
+
+
 Navigate to the frontend directory.
 Install dependencies.
 Start the React development server.
