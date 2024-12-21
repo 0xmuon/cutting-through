@@ -1,0 +1,38 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Valorant Tracker" />
+    
+    <StackLayout class="p-4">
+        <GridLayout rows="auto" columns="*, auto, *" class="mb-4">
+            <TextField col="0" hint="Username" text="{{ username }}" class="p-2 border rounded" />
+            <Label col="1" text="#" class="text-lg font-bold mx-2" />
+            <TextField col="2" hint="Tag" text="{{ tag }}" class="p-2 border rounded" />
+        </GridLayout>
+        
+        <Button text="Search Player" tap="{{ onSearch }}" class="bg-red-500 text-white p-3 rounded" />
+        
+        <ActivityIndicator busy="{{ isLoading }}" class="m-4" />
+        
+        <Label text="{{ errorMessage }}" class="text-red-500 text-center" visibility="{{ errorMessage ? 'visible' : 'collapsed' }}" />
+        
+        <ScrollView visibility="{{ player ? 'visible' : 'collapsed' }}">
+            <StackLayout class="mt-4">
+                <Label text="{{ player.username + '#' + player.tag }}" class="text-2xl font-bold text-center" />
+                <Label text="{{ 'Rank: ' + player.stats.rank }}" class="text-lg" />
+                <Label text="{{ 'Elo: ' + player.stats.elo }}" />
+                <Label text="{{ 'K/D Ratio: ' + player.stats.killDeathRatio }}" />
+                <Label text="{{ 'Win Rate: ' + player.stats.winRate + '%' }}" />
+                
+                <Label text="Recent Matches" class="text-xl font-bold mt-4 mb-2" />
+                <ListView items="{{ player.stats.matches }}" height="300">
+                    <ListView.itemTemplate>
+                        <GridLayout columns="*, *, *" class="p-2 border-b">
+                            <Label col="0" text="{{ map }}" />
+                            <Label col="1" text="{{ agent }}" />
+                            <Label col="2" text="{{ kills + '/' + deaths + '/' + assists }}" />
+                        </GridLayout>
+                    </ListView.itemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</Page>
